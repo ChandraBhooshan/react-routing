@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Navbar from "./Navbar.js"
-import DummyHome from "./DummyHome.js"
+// import DummyHome from "./DummyHome.js"
 import About from "./About.js"
 import Contact from "./Contact.js"
 import Blog from "./Blog.js"
