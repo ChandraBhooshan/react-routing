@@ -16,14 +16,6 @@ function Blog() {
       content:
         "Components help organize UI into reusable blocks. This makes applications easier to maintain, scale, and debug.",
     },
-    {
-      id: 3,
-      title: "Understanding Props and State",
-      author: "Buddy",
-      date: "May 20, 2026",
-      content:
-        "Props are used to pass data between components, while state helps manage dynamic data inside a component.",
-    },
   ];
 
   return (
