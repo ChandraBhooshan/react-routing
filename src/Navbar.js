@@ -18,7 +18,7 @@ function Navbar() {
                 <Link to="/contact" className="nav-link">Contact</Link>
                 <Link to="/blog" className="nav-link">Blog</Link>
                 <button type="" class="nav-button">
-                    +91 1122114422
+                    +91 9554040507
                     <span>
                         <FontAwesomeIcon icon={faPhone} class="callPhone" />
                     </span>
