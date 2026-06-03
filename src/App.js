@@ -5,10 +5,9 @@ import DummyHome from "./DummyHome.js";
 import About from "./About.js";
 import Contact from "./Contact.js";
 import Blog from "./Blog.js";
-import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  // const Navigate = useNavigate(); // Initialize hook here
   return (
     <div className="App">
       <BrowserRouter>
