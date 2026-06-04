@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import "./App.css";
 import Navbar from "./Navbar.js";
-import DummyHome from "./DummyHome.js";
+// import DummyHome from "./DummyHome.js";
 import About from "./About.js";
 import Contact from "./Contact.js";
 import Blog from "./Blog.js";
@@ -16,8 +16,9 @@ function App() {
         <Navbar />
         <Routes>
           {/* If you have a Home component, use it here. Otherwise, leave it empty or map to a lander */}
-          <Route path="/" element={<DummyHome />}></Route>
+          {/* <Route path="/" element={<DummyHome />}></Route> */}
           {/* <Route path="/home" element={<Navigate to="/" replace />} /> */}
+          <Route path="/" element={<Home />}></Route>
           <Route path="/home" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
