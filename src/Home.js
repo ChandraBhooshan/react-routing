@@ -251,10 +251,10 @@ const featuresData = [
   { title: "Global Infrastructure" },
 ];
 
-const pricingData = [
-  { title: "Starter", price: "$49/mo", isPopular: false },
-  { title: "Professional", price: "$199/mo", isPopular: true },
-  { title: "Enterprise", price: "Custom", isPopular: false },
-];
+// const pricingData = [
+//   { title: "Starter", price: "$49/mo", isPopular: false },
+//   { title: "Professional", price: "$199/mo", isPopular: true },
+//   { title: "Enterprise", price: "Custom", isPopular: false },
+// ];
 
 export default Home;
