@@ -40,7 +40,7 @@ const Home = () => {
       </section>
 
       {/* 3. Services Section */}
-      <section className="services-section">
+      {/* <section className="services-section">
         <h2>Our Services</h2>
         <div className="grid-container">
           {servicesData.map((service, index) => (
@@ -54,7 +54,7 @@ const Home = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* 4. Features Section */}
       <section className="features-section">
@@ -209,38 +209,38 @@ const Home = () => {
 
 // --- Data Arrays ---
 
-const servicesData = [
-  {
-    title: "AI Solutions",
-    icon: "fa-robot",
-    desc: "Custom machine learning models and intelligent automation.",
-  },
-  {
-    title: "Cloud Infrastructure",
-    icon: "fa-cloud",
-    desc: "Scalable, secure, and globally distributed cloud environments.",
-  },
-  {
-    title: "Web Development",
-    icon: "fa-code",
-    desc: "High-performance React and Node.js applications.",
-  },
-  {
-    title: "Mobile App Development",
-    icon: "fa-mobile-alt",
-    desc: "Native and cross-platform mobile experiences.",
-  },
-  {
-    title: "Data Analytics",
-    icon: "fa-chart-network",
-    desc: "Real-time dashboards and predictive analytics.",
-  },
-  {
-    title: "Cybersecurity",
-    icon: "fa-shield-alt",
-    desc: "Enterprise-grade threat detection and mitigation.",
-  },
-];
+// const servicesData = [
+//   {
+//     title: "AI Solutions",
+//     icon: "fa-robot",
+//     desc: "Custom machine learning models and intelligent automation.",
+//   },
+//   {
+//     title: "Cloud Infrastructure",
+//     icon: "fa-cloud",
+//     desc: "Scalable, secure, and globally distributed cloud environments.",
+//   },
+//   {
+//     title: "Web Development",
+//     icon: "fa-code",
+//     desc: "High-performance React and Node.js applications.",
+//   },
+//   {
+//     title: "Mobile App Development",
+//     icon: "fa-mobile-alt",
+//     desc: "Native and cross-platform mobile experiences.",
+//   },
+//   {
+//     title: "Data Analytics",
+//     icon: "fa-chart-network",
+//     desc: "Real-time dashboards and predictive analytics.",
+//   },
+//   {
+//     title: "Cybersecurity",
+//     icon: "fa-shield-alt",
+//     desc: "Enterprise-grade threat detection and mitigation.",
+//   },
+// ];
 
 const featuresData = [
   { title: "Scalable Architecture" },
