@@ -3,12 +3,17 @@ import "./App.css";
 import Navbar from "./Navbar.js";
 // import DummyHome from "./DummyHome.js";
 import About from "./About.js";
-import Contact from "./Contact.js";
+import Work from "./Work.js";
 import Blog from "./Blog.js";
 import Home from "./Home.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { StrictMode } from "react";
+import { GoogleOAuthProvider } from "@react-oauth/google";
 
 function App() {
+  const CLIENT_ID =
+    "385139104836-cjp1qogmpjs3opefou73lg3jdvis868n.apps.googleusercontent.com";
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -21,7 +26,16 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/home" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
+          <Route
+            path="/work"
+            element={
+              <StrictMode>
+                <GoogleOAuthProvider clientId={CLIENT_ID}>
+                  <Work />
+                </GoogleOAuthProvider>
+              </StrictMode>
+            }
+          ></Route>
           <Route path="/blog" element={<Blog />}></Route>
         </Routes>
       </BrowserRouter>
