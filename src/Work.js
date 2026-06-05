@@ -7,9 +7,9 @@ import "./Work.css";
 function Work() {
   const navigate = useNavigate();
 
-  function handleLogout() {
-    googleLogout();
-  }
+  // function handleLogout() {
+  //   googleLogout();
+  // }
   return (
     <div className="work-page">
       <GoogleLogin
