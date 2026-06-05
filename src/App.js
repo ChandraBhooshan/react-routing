@@ -1,11 +1,11 @@
 // import logo from './logo.svg';
 import "./App.css";
 import Navbar from "./Navbar.js";
-// import DummyHome from "./DummyHome.js";
 import About from "./About.js";
 import Work from "./Work.js";
 import Blog from "./Blog.js";
 import Home from "./Home.js";
+import Dashboard from "./Dashboard.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { StrictMode } from "react";
 import { GoogleOAuthProvider } from "@react-oauth/google";
@@ -37,6 +37,7 @@ function App() {
             }
           ></Route>
           <Route path="/blog" element={<Blog />}></Route>
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
     </div>

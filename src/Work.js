@@ -15,8 +15,14 @@ function Work() {
       <GoogleLogin
         onSuccess={(credentialResponse) => {
           console.log(credentialResponse);
-          console.log(jwtDecode(credentialResponse.credential));
-          navigate("/home");
+          // 1. Decode the token to get the user's profile data
+          const decodedUser = jwtDecode(credentialResponse.credential);
+          console.log(decodedUser);
+
+          // 2. Save the user data to localStorage so it persists across pages
+          localStorage.setItem("user", JSON.stringify(decodedUser));
+          // 3. Navigate to the Home page
+          navigate("/Dashboard");
         }}
         onError={() => console.log("Login failed")}
         auto_select={true}
